@@ -41,6 +41,7 @@
          const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzytwG5CVx4hvLxRKElOowgtasTZlOwXJPyaqf61rOTyvzotckwBTwC6QqYhOE3hESG/exec";
          var url = document.location.href;
          var k = url.substring(url.lastIndexOf("k=")+2);
+         var m = url.substring(url.lastIndexOf("m=")+2);
 
          if(k){
              fetch(AS_URL_BASE+'?k='+k)
